@@ -5,4 +5,15 @@
   width: 50%;
   max-width: 480px;
   max-height: 525px;
+  margin-top: 0.8em;
+}
+
+.portfolio-box {
+  padding-top: 2.5%;
+}
+
+.portfolio-image {
+  display: flex;
+  justify-content: center;
+  padding: 2.5%;
 }

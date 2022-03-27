@@ -41,6 +41,19 @@ body {
           align-items: center;
 }
 
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.header {
+  font-size: 0.2em;
+  padding: 1.4em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .homeimage {
   display: block;
   margin-left: auto;
@@ -48,5 +61,20 @@ body {
   width: 50%;
   max-width: 480px;
   max-height: 525px;
+  margin-top: 0.8em;
+}
+
+.portfolio-box {
+  padding-top: 2.5%;
+}
+
+.portfolio-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5%;
 }
 /*# sourceMappingURL=style.css.map */
