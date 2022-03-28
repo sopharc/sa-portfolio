@@ -5,7 +5,7 @@
   width: 50%;
   max-width: 480px;
   max-height: 525px;
-  margin-top: 0.8em;
+  // margin-top: 0.8em;
 }
 
 .portfolio-box {
@@ -17,3 +17,33 @@
   justify-content: center;
   padding: 2.5%;
 }
+
+.container {
+  /*centers in the container*/
+  text-align: center;
+  font-size: 0.2em;
+}
+
+div.circTxt {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 128px;
+  color: black;
+  width: auto;
+}
+
+// .rotating {
+//    animation:rotating 5s linear infinite;
+// }
+
+// @keyframes rotating  {
+//    from {
+//       transform:rotate(0deg);
+//    }
+
+//    to {
+//       transform:rotate(360deg);
+//    }
+
+// }

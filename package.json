@@ -1,0 +1,24 @@
+{
+  "name": "sa-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "popper.js": "^require_version"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sopharc/sa-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sopharc/sa-portfolio/issues"
+  },
+  "homepage": "https://github.com/sopharc/sa-portfolio#readme"
+}
