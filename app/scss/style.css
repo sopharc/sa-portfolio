@@ -1,12 +1,13 @@
 * {
   font-family: 'Crimson Pro' , serif;
+  color: #3337a0;
 }
 
 html {
   font-size: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #efe7dd;
+  background: #ede7e2;
 }
 
 *, *::before, *::after {
@@ -19,6 +20,10 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: 'Crimson Pro' , serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .flex {
@@ -48,7 +53,7 @@ body {
 a {
   text-decoration: none;
   padding: 10px;
-  color: black;
+  color: #3337a0;
 }
 
 .header {
@@ -93,6 +98,64 @@ div.circTxt {
   /*adjust as needed*/
   margin-bottom: 128px;
   color: black;
-  width: auto;
+}
+
+.text-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.text-box .text {
+  position: absolute;
+  color: black;
+  font-size: 0.2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-animation: Rotation 30s linear infinite;
+          animation: Rotation 30s linear infinite;
+}
+
+@-webkit-keyframes Rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes Rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.text-box .text span {
+  position: absolute;
+  top: -300px;
+  display: inline-block;
+  -webkit-transform-origin: 0 300px;
+          transform-origin: 0 300px;
 }
 /*# sourceMappingURL=style.css.map */

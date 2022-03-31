@@ -2,7 +2,7 @@
 
 function circularText(txt, radius, classIndex) {
   txt = txt.split(""),
-    classIndex = document.getElementsByClassName("circTxt")[classIndex];
+    classIndex = document.getElementsByClassName("text")[classIndex];
 
   var deg = 360 / txt.length,
     origin = 0;
@@ -13,5 +13,19 @@ function circularText(txt, radius, classIndex) {
     origin += deg;
   });
 }
+// text animation
 
-circularText("hello@sophiearcher.co.uk ", 360, 0);
+const text = document.querySelector('.text');
+text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+const element = document.querySelectorAll('span');
+for (let i = 0; i < element.length; i++) {
+  element[i].style.transform = "rotate(" + i * 14.5 + "deg)";
+}
+
+// const textholder = document.querySelector('.text-box');
+
+// document.addEventListener('mousemove', function (e) {
+//   textholder.style.left = e.pageX + 'px';
+//   textholder.style.top = e.pageY + 'px';
+// });

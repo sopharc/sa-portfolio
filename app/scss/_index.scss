@@ -30,20 +30,43 @@ div.circTxt {
   /*adjust as needed*/
   margin-bottom: 128px;
   color: black;
-  width: auto;
+  // width: 100%;
 }
 
-// .rotating {
-//    animation:rotating 5s linear infinite;
-// }
 
-// @keyframes rotating  {
-//    from {
-//       transform:rotate(0deg);
-//    }
+// text animation
 
-//    to {
-//       transform:rotate(360deg);
-//    }
+.text-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+.text-box .text{
+    position: absolute;
+    color: black;
+    font-size: 0.2em;
+    user-select: none;
+    pointer-events: none;
+    animation: Rotation 30s linear infinite;
+}
 
-// }
+@keyframes Rotation{
+    0%
+    {
+       transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+.text-box .text span{
+    position: absolute;
+    top: -300px;
+    display: inline-block;
+    transform-origin: 0 300px;
+}
