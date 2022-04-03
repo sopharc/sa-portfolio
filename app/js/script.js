@@ -23,6 +23,8 @@ for (let i = 0; i < element.length; i++) {
   element[i].style.transform = "rotate(" + i * 14.5 + "deg)";
 }
 
+// mouse action
+
 // const textholder = document.querySelector('.text-box');
 
 // document.addEventListener('mousemove', function (e) {
